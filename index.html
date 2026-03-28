@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>Кева AI - Умный помощник с голосом</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="avatar">
+                <span class="avatar-icon">🧠</span>
+            </div>
+            <div class="title-section">
+                <h1>Кева AI</h1>
+                <p class="status" id="statusText">Онлайн • Готов к диалогу</p>
+            </div>
+            <button id="searchToggleBtn" class="search-toggle" title="Поиск в интернете">
+                🌐
+            </button>
+        </header>
+
+        <main class="chat-container" id="chatContainer">
+            <div class="welcome-message">
+                <div class="message bot">
+                    <div class="message-content">
+                        Привет, братан! 🤜🤛 Я <strong>Кева AI</strong><br>
+                        🔥 **Что я умею:**<br>
+                        • 📝 Отвечать на вопросы<br>
+                        • 🌐 Искать в интернете (скажи "найди")<br>
+                        • 🎤 Голосовые сообщения (нажми микрофон)<br>
+                        • 📐 Решать примеры (например: "2+2" или "10*5")<br>
+                        <span class="search-hint">💡 Попробуй: "найди рецепт пиццы" или "2+2" или нажми микрофон 🎤</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <button id="voiceBtn" class="voice-button" title="Голосовое сообщение">
+                    🎤
+                </button>
+                <textarea id="userInput" placeholder="Спроси Кеву или попроси найти в интернете..." rows="1"></textarea>
+                <button id="sendBtn" class="send-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="info-note">
+                🎤 Нажми микрофон для голоса | 🔍 "найди" для поиска | 📐 Решаю примеры
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра сайтов -->
+    <div id="webviewModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Кева AI - Просмотр</h3>
+                <button id="closeModalBtn" class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <iframe id="webviewFrame" src="about:blank" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="openInBrowserBtn" class="open-browser-btn">🌐 Открыть в браузере</button>
+                <button id="closeModalFooterBtn" class="close-modal-btn">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="photo.js"></script>
+<script src="services.js"></script>
+<script src="questions-answers/keva1.js"></script>
+<script src="questions-answers/keva2.js"></script>
+<script src="questions-answers/keva3.js"></script>
+<script src="questions-answers/keva4.js"></script>
+<script src="questions-answers/keva5.js"></script>
+<script src="questions-answers/keva6.js"></script>
+<script src="questions-answers/keva7.js"></script>
+<script src="questions-answers/keva8.js"></script>
+<script src="questions-answers/keva9.js"></script>
+<script src="questions-answers/keva10.js"></script>
+<script src="questions-answers/keva11.js"></script>
+<script src="questions-answers/keva12.js"></script>
+<script src="questions-answers/keva13.js"></script>
+</body>
+</html>
